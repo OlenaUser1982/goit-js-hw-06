@@ -6,6 +6,7 @@ function getRandomHexColor() {
 const span = document.querySelector(".color");
 const btn = document.querySelector(".change-color");
 btn.addEventListener("click", () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  span.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  document.body.style.backgroundColor = randomColor;
+  span.textContent = randomColor;
 })
